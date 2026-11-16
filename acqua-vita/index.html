@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#16365c">
+  <meta name="color-scheme" content="light dark">
+  <!-- Seguridad: la app solo carga código propio. unpkg se permite únicamente como plan B para el mapa (Leaflet). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://unpkg.com; img-src 'self' data: blob: https://tile.openstreetmap.org https://server.arcgisonline.com https://unpkg.com; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <title>Acqua Vita Reparto</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <img class="logo" src="icons/icon-192.png" alt="" width="40" height="40">
+    <div class="cab-texto">
+      <h1>Acqua Vita</h1>
+      <p>Reparto</p>
+    </div>
+    <span id="red" class="red" hidden></span>
+  </header>
+
+  <main>
+    <section id="tab-hoy" class="tab"></section>
+    <section id="tab-clientes" class="tab" hidden></section>
+    <section id="tab-ajustes" class="tab" hidden></section>
+  </main>
+
+  <nav class="nav" aria-label="Secciones">
+    <button type="button" data-tab="hoy" aria-current="page"><span class="nav-ico" aria-hidden="true">&#9654;</span>Hoy</button>
+    <button type="button" data-tab="clientes" aria-current="false"><span class="nav-ico" aria-hidden="true">&#9679;</span>Clientes</button>
+    <button type="button" data-tab="ajustes" aria-current="false"><span class="nav-ico" aria-hidden="true">&#9881;</span>Ajustes</button>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="dlg-cliente"></dialog>
+  <dialog id="dlg-mapa"></dialog>
+  <dialog id="dlg-agregar"></dialog>
+  <div id="print-area" aria-hidden="true"></div>
+
+  <noscript>Esta app necesita JavaScript para funcionar.</noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

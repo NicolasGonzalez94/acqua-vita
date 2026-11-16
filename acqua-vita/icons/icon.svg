@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#ffffff"/>
+  <circle cx="256" cy="256" r="214" fill="#ffffff" stroke="#16365c" stroke-width="16"/>
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#16365c" stroke-width="3" opacity="0.35"/>
+  <!-- gota azul -->
+  <g transform="translate(222 196) rotate(-38)">
+    <path d="M0 -92 C 62 -30 62 52 0 92 C -62 52 -62 -30 0 -92 Z" fill="#1d7fd0"/>
+    <path d="M-6 -62 C 28 -24 30 24 -4 58" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <!-- gota verde -->
+  <g transform="translate(298 232) rotate(142)">
+    <path d="M0 -92 C 62 -30 62 52 0 92 C -62 52 -62 -30 0 -92 Z" fill="#4ca83a"/>
+    <path d="M-6 -62 C 28 -24 30 24 -4 58" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <text x="256" y="386" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700" font-size="38" letter-spacing="2" fill="#16365c">ACQUA VITA</text>
+</svg>
